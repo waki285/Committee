@@ -84,7 +84,7 @@ const quesP = async (query) => {
   if (ans === "n") process.exit(0);
   console.log(await execP(`git commit -m "${msg}"`)
     .catch((e) => {
-      console.error(chalk.red(`Error: ${e}`));
+      console.error(chalk.red(`Error: ${e}`).replace(/Error: /, ""));
       process.exit(1);
     })
   );

@@ -2,6 +2,13 @@
 
 # Please set GPG_KEY, USER_NAME, and USER_EMAIL to environment variables.
 
+# or...
+
+#export GPG_KEY=
+#export USER_NAME=
+#export USER_EMAIL=
+
+# If you do not set any environment variables, you can set the values here.
 
 export GPG_TTY=$(tty)
 

@@ -44,3 +44,28 @@ When this prompt comes up again, enter your passphrase and press Enter.
 The init is now complete. This init is to be run only when you open the console, and DO NOT need to be run every time you commit.
 
 ### Commit
+You can choose one of the following three types of commits.
+
+- `node c.js "some commit"`
+- `node c.js feat "some commit"`
+- `node c.js feat code "some commit"`
+
+The commit message when you run these commands will look like this, respectively
+
+- `some commit`
+- `✨ feat: some commit`
+- `✨ feat(code): some commit`
+
+The `feat` in the second and third examples is based on [DEVELOPERS.md of Angular.js](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#type).
+
+- feat → ✨ feat
+- fix → 🐛 fix
+- docs → 📋 docs
+- style → 🧹 style
+- refactor → 🔧 refactor
+- perf → 🏷 perf
+- test → 🧪 test
+- chore → 🗃 chore
+- Other: Emoji will not be added, they will be displayed as you have entered them.
+
+Also, it will only perform staging and committing, not push.
