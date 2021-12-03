@@ -41,7 +41,7 @@ When this prompt comes up again, enter your passphrase and press Enter.
 
 ![passphrase prompt](https://user-images.githubusercontent.com/67305123/144549978-47489dbf-2853-4c19-ad70-a0eeab41b190.png)
 
-The init is now complete. This init is to be run only when you open the console, and DO NOT need to be run every time you commit.
+The init is now complete. This init is to be run only when you open the console, and DO NOT need to be run every time you commit. but, when the signature period expires, you may have to perform this operation again.
 
 ### Commit
 You can choose one of the following three types of commits.
@@ -69,3 +69,5 @@ The `feat` in the second and third examples is based on [DEVELOPERS.md of Angula
 - Other: Emoji will not be added, they will be displayed as you have entered them.
 
 Also, it will only perform staging and committing, not push.
+
+Also, commits are always done with signatures.
