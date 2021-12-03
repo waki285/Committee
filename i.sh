@@ -20,7 +20,8 @@ git config --global user.name "$USER_NAME"
 git config --global user.email "$USER_EMAIL"
 git config --global push.default current
 git config --global gpg.program gpg
-git config --global user.signingkey $GPG_KEY
+git config --global user.signingkey "$GPG_KEY"
 git config --global commit.gpgsign true
+git config --global tag.gpgsign true
 
 gpg --status-fd=2 -bsau $GPG_KEY
